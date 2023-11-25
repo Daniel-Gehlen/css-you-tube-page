@@ -1,0 +1,425 @@
+body {
+    background-color: #F9F9F9;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    color: #111111;
+    box-sizing: border-box;
+}
+
+body > * {
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #111111;
+}
+
+strong {
+    font-weight: 500;
+}
+
+/* ========== HEADER ========== */
+
+header {
+    background-color: #FFFFFF;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+header > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .left {
+    text-align: left;
+}
+
+header .left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .left ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .left .menu svg {
+    fill: #606060;
+    height: 24px;
+    margin: 15px 15px 15px 25px;
+}
+
+header .left .logo svg {
+    height: 24px;
+    margin: 15px;
+}
+
+header .search form {
+    margin: 10px;
+}
+
+header .search input {
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #DDDDDD;
+    padding: 5px 10px; /* Ajustei o padding para evitar problemas com o layout */
+    box-shadow: 0 0 4px rgba(153, 153, 153, 0.15) inset;
+    font-size: 16px;
+}
+
+header .search input::placeholder {
+    color: #111111;
+    opacity: 1;
+}
+
+header .search button {
+    border-radius: 0 2px 2px 0;
+    border: 1px solid #DDDDDD;
+    border-left: none;
+    background-color: #F2F2F2;
+    padding: 6px 25px 5px;
+    margin-left: -5px;
+    top: 1px;
+    position: relative;
+}
+
+header .search button img {
+    height: 18px;
+    fill: #606060;
+}
+
+header .right {
+    text-align: right;
+}
+
+header .right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .right ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header .right ul li img {
+    height: 24px;
+    margin: 15px;
+}
+
+header .right ul li.user img {
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* ========== MAIN ========== */
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px;
+}
+
+main {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+main .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+main .iframe-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+main #title {
+    margin-top: 20px;
+}
+
+main h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	gap: 12px;
+}
+
+main ul li {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+
+}
+
+main ul li img {
+    margin-right: 0 ;
+	width: 45px;
+	height: 45px;
+}
+
+main ul li span {
+    font-size: 14px;
+}
+
+main .subscribe {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .info {
+    margin-top: 20px;
+}
+
+
+
+main .info div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main .info strong {
+    font-size: 16px;
+}
+
+main .info p.description {
+    line-height: 1.6;
+}
+
+/* ========== ASIDE ========== */
+
+aside {
+    margin-top: 20px;
+}
+
+aside .autoplay {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+aside .header p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+aside .autoplay-button {
+    display: flex;
+    align-items: center;
+}
+
+aside .autoplay-button span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+aside .toggle {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+aside .toggle-bar {
+    background-color: #DDDDDD;
+    width: 36px;
+    height: 14px;
+    border-radius: 50px;
+    position: relative;
+    top: 3px;
+}
+
+aside .toggle-button {
+    background-color: #065fd4;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+aside .video-recommendation {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+aside .video-recommendation img {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+aside .video-recommendation div {
+    max-width: 220px;
+}
+
+aside .video-recommendation p.title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+aside .video-recommendation p.user {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 5px;
+}
+
+aside .video-recommendation p.details {
+    font-size: 14px;
+    color: #606060;
+}
+
+/* Additional styles go here */
+
+.info {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+	display: inline-block;
+
+    grid-template-columns: 48px auto;
+    grid-column-gap: 46px;
+	
+}
+
+.info img {
+    border-radius: 50%;
+}
+
+.info .name {
+    font-weight: 500;
+}
+
+.info .subscribers {
+    color: #606060;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.info .description {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.info .show-more {
+    color: #606060;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.autoplay {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 15px;
+}
+
+.autoplay .header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-bottom: 20px;
+}
+
+.autoplay .header p {
+    font-size: 16px;
+}
+
+.autoplay-button {
+    text-align: right;
+}
+
+.autoplay-button>* {
+    display: inline-block;
+}
+
+.autoplay-button span {
+    font-weight: 500;
+    color: #666666;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.toggle {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.toggle .toggle-bar {
+    background-color: #DDDDDD;
+    width: 36px;
+    height: 14px;
+    border-radius: 50px;
+    position: relative;
+    top: 3px;
+}
+
+.toggle .toggle-button {
+    background-color: #065fd4;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 5px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.video-recommendation {
+    display: grid;
+    grid-template-columns: 168px auto;
+    grid-column-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.video-recommendation .title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.video-recommendation .user,
+.video-recommendation .details {
+    color: #909090;
+    font-size: 13px;
+}
